@@ -1,22 +1,22 @@
 # 🚀 Project 89 – AWS CloudWatch Logs + RDS Integration | Full Stack DevOps System | Logs Streaming Ready
 
-[Java 21](https://img.shields.io/badge/Java-21-E76F00?logo=openjdk&logoColor=white)
-[Spring Boot 3.2.5](https://img.shields.io/badge/Spring%20Boot-3.2.5-6DB33F?logo=springboot&logoColor=white)
-[Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
-[AWS CloudWatch](https://img.shields.io/badge/AWS-CloudWatch-FF4F8B?logo=amazoncloudwatch&logoColor=white)
-[AWS RDS](https://img.shields.io/badge/AWS-RDS-527FFF?logo=amazonrds&logoColor=white)
-[MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
-[H2 Database](https://img.shields.io/badge/H2-In--Memory-1024D6?logo=h2&logoColor=white)
-[AWS EC2](https://img.shields.io/badge/AWS-EC2-FF9900?logo=amazonec2&logoColor=white)
-[Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)
-[Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?logo=apachemaven&logoColor=white)
-[Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1.20-D4AF00?logo=apachetomcat&logoColor=white)
-[Port](https://img.shields.io/badge/Port-9696-20B000)
-[Status](https://img.shields.io/badge/Status-CloudWatch%20Logs%20Streaming-20B000)
+![Java 21](https://img.shields.io/badge/Java-21-E76F00?logo=openjdk&logoColor=white)
+![Spring Boot 3.2.5](https://img.shields.io/badge/Spring%20Boot-3.2.5-6DB33F?logo=springboot&logoColor=white)
+![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+![AWS CloudWatch](https://img.shields.io/badge/AWS-CloudWatch-FF4F8B?logo=amazoncloudwatch&logoColor=white)
+![AWS RDS](https://img.shields.io/badge/AWS-RDS-527FFF?logo=amazonrds&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
+![H2 Database](https://img.shields.io/badge/H2-In--Memory-1024D6?logo=h2&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS-EC2-FF9900?logo=amazonec2&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?logo=apachemaven&logoColor=white)
+![Tomcat](https://img.shields.io/badge/Apache%20Tomcat-10.1.20-D4AF00?logo=apachetomcat&logoColor=white)
+![Port](https://img.shields.io/badge/Port-9696-20B000)
+![Status](https://img.shields.io/badge/Status-CloudWatch%20Logs%20Streaming-20B000)
 
 **Live URL:** https://eight9-cloudwatch-logs.onrender.com/
 
-[[Live](https://img.shields.io/badge/Live-Render-brightgreen?style=for-the-badge&logo=render)](https://eight9-cloudwatch-logs.onrender.com)
+[![Live](https://img.shields.io/badge/Live-Render-brightgreen?style=for-the-badge&logo=render)](https://eight9-cloudwatch-logs.onrender.com)
 
 Project 89 - Part of Java 100 Projects Challenge - DevOps + Cloud Tier
 ---
@@ -704,47 +704,47 @@ curl -X POST https://eight9-cloudwatch-logs.onrender.com/logs/test
 # 📸 Screenshots
 
 ### Demo 1 – Browser Live - CloudWatch Ready Status - Home /
-[Demo1 Browser](screenshots/demo1.png)
+![Demo1 Browser](screenshots/demo1.png)
 
 *localhost:9696 - Browser JSON - {"tier":"9 - DevOps + Cloud - CloudWatch Logs","status":"Live on CloudWatch - Logs Streaming","database":"H2 In-Memory (RDS-Ready)","totalUsers":0,"owner":"RaviTeja - 89/100","dbUrl":"jdbc:h2:mem:raviteja89","cloudWatch":"Disabled - Local Fallback (CONSOLE + FILE) - Ready for AWS","endpoints":["GET /","GET /health","GET /users","POST /users","GET /users/{id}","DELETE /users/{id}","GET /logs","POST /logs/test"],"project":"89-cloudwatch-logs"} - Proof of Eclipse + Spring Boot + H2 + CloudWatch-Ready running on 9696*
 
 ### Demo 2 – Browser - GET /logs - 2 Logs Initial - CloudWatch Fallback
-[Demo2 Logs2](screenshots/demo2.png)
+![Demo2 Logs2](screenshots/demo2.png)
 
 *GET http://localhost:9696/logs - Browser JSON - 200 OK - Returns {"cloudWatch":"Disabled - Local Fallback (CONSOLE + FILE) - Ready for AWS","totalLogs":2,"logs":["1792935345053 - [INFO] GET /logs - Fetching recent logs","1792935325886 - [INFO] Home endpoint called - totalUsers=0"],"note":"These logs are also pushed to AWS CloudWatch Logs if CLOUDWATCH_ENABLED=true + AWS keys set","project":"89-cloudwatch-logs"} - Proof of CloudWatchLogService memory buffer 50 working*
 
 ### Demo 3 – Postman - POST /logs/test - 5 Test Logs Generated - 200 OK
-[Demo3 TestLogs](screenshots/demo3.png)
+![Demo3 TestLogs](screenshots/demo3.png)
 
 *POST http://localhost:9696/logs/test - Postman - Body empty - 200 OK 23ms Size 353B - Returns {"message":"5 test logs generated","levels":["INFO","WARN","ERROR","DEBUG","INFO"],"check":"GET /logs to see them","cloudWatch":"Disabled - Local Fallback (CONSOLE + FILE) - Ready for AWS"} - Proof of INFO/WARN/ERROR/DEBUG log levels for CloudWatch alarm test*
 
 ### Demo 4 – Browser - GET /users - Empty Array - Table Created - 200 OK
-[Demo4 UsersEmptyBrowser](screenshots/demo4.png)
+![Demo4 UsersEmptyBrowser](screenshots/demo4.png)
 
 *GET http://localhost:9696/users - Browser - Returns [] empty array - Proof of Hibernate create table users (id bigint generated by default as identity, name, email, department) + JpaRepository + CloudWatch log GET /users captured*
 
 ### Demo 5 – Postman - GET /users - Empty - 200 OK 10ms - Table Proof
-[Demo5 UsersEmptyPostman](screenshots/demo5.png)
+![Demo5 UsersEmptyPostman](screenshots/demo5.png)
 
 *GET http://localhost:9696/users - Postman - 200 OK Time 10ms Size 166B - Returns [] - Proof of Hibernate auto DDL + UserRepository.findAll() working before any POST - Logs: [DEBUG] Hibernate: select * from users + [INFO] GET /users - Fetching all users pushed to CloudWatchLogService*
 
 ### Demo 6 – Postman - POST /users - RDS Insert + CloudWatch Log - 200 OK 145ms
-[Demo6 Post](screenshots/demo6.png)
+![Demo6 Post](screenshots/demo6.png)
 
 *POST http://localhost:9696/users - Postman - Body raw JSON {"name":"RaviTeja","email":"raviteja@aws.com"} - 200 OK Time 145ms Size 313B - Returns {"id":1,"name":"RaviTeja","email":"raviteja@aws.com","department":null} - Proof of RDS CRUD insert + CloudWatch logs: [INFO] POST /users - Creating user: RaviTeja + [INFO] User saved successfully id=1 - Pushing log to CloudWatch if enabled - Both logs visible in GET /logs*
 
 ### Demo 7 – Postman - GET /logs - 14 Logs After CRUD - 200 OK 8ms
-[Demo7 Logs14](screenshots/demo7.png)
+![Demo7 Logs14](screenshots/demo7.png)
 
 *GET http://localhost:9696/logs - Postman - 200 OK Time 8ms Size 1.4KB - Returns {"cloudWatch":"Disabled - Local Fallback (CONSOLE + FILE) - Ready for AWS","totalLogs":14,"logs":["1792935536918 - [INFO] GET /logs - Fetching recent logs","1792935493062 - [INFO] User saved successfully id=1 - Pushing log to CloudWatch if enabled","1792935493012 - [INFO] POST /users - Creating user: RaviTeja email=raviteja@aws.com","1792935448288 - [DEBUG] Hibernate: select * from users","1792935448288 - [INFO] GET /users - Fetching all users","1792935407661 - [DEBUG] Hibernate: select * from users","1792935407657 - [INFO] GET /users - Fetching all users","1792935386355 - [INFO] Test log - INFO - All 4 levels pushed - Check /logs","1792935386339 - [DEBUG] Test log - DEBUG - Fetching users count query","1792935386339 - [ERROR] Test log - ERROR - Simulated payment failure - For CloudWatch alarm test","1792935386339 - [WARN] Test log - WARN - High memory usage 80%","1792935386339 - [INFO] Test log - INFO - User login success","1792935345053 - [INFO] GET /logs - Fetching recent logs","1792935325886 - [INFO] Home endpoint called - totalUsers=0"],"note":"These logs are also pushed to AWS CloudWatch Logs if CLOUDWATCH_ENABLED=true","project":"89-cloudwatch-logs"} - Proof of CloudWatch streaming 14 logs including CRUD + test logs + Hibernate DEBUG*
 
 ### Demo 8 – Browser - GET /logs - 15 Logs - CloudWatch Streaming Proof
-[Demo8 Logs15](screenshots/demo8.png)
+![Demo8 Logs15](screenshots/demo8.png)
 
 *GET http://localhost:9696/logs - Browser - Returns totalLogs 15 with logs [INFO] GET /logs, [INFO] User saved id=1, [INFO] POST /users Creating user, [DEBUG] Hibernate select *, [INFO] GET /users Fetching all users, [INFO] Test log All 4 levels, [DEBUG] Test log DEBUG Fetching count, [ERROR] Test log ERROR Simulated payment failure For CloudWatch alarm test, [WARN] Test log WARN High memory usage 80%, [INFO] Test log INFO User login success - Proof of Full CloudWatch Logs Streaming - INFO/WARN/ERROR/DEBUG all captured for AWS CloudWatch console*
 
 ### Demo 9 – Browser - GET /users - With Data - Persistence Proof - CloudWatch Logged
-[Demo9 UsersData](screenshots/demo9.png)
+![Demo9 UsersData](screenshots/demo9.png)
 
 *GET http://localhost:9696/users - Browser - Returns [{"id":1,"name":"RaviTeja","email":"raviteja@aws.com","department":null}] - Proof of RDS persistence after POST + CloudWatch logs: Every GET /users generates [DEBUG] Hibernate select * + [INFO] GET /users - Fetching all users which are pushed to GET /logs memory buffer + future AWS CloudWatch Logs group 89-cloudwatch-logs*
 
