@@ -965,7 +965,7 @@ If you found this project helpful, consider giving it a ⭐ Star on GitHub.
 
 **Single Repo:** [89-cloudwatch-logs](https://github.com/raviteja-dev950/89-cloudwatch-logs)
 
-**Live URL:** https://eight9-cloudwatch-logs.onrender.com/ -> Replace with your Render URL after deploy
+**Live URL:** https://eight9-cloudwatch-logs.onrender.com/ 
 
 **Logs URL:** https://eight9-cloudwatch-logs.onrender.com/logs -> Shows last 50 logs - CloudWatch streaming proof
 
