@@ -170,6 +170,7 @@ cd 89-cloudwatch-logs
 
 ---
 
+
 ## 2⃣ Verify application.properties & Controllers
 
 - Verify `src/main/resources/application.properties` - CloudWatch-Ready - NO driver-class-name, NO dialect!
