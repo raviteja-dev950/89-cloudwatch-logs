@@ -749,6 +749,11 @@ curl -X POST https://eight9-cloudwatch-logs.onrender.com/logs/test
 
 *GET http://localhost:9696/users - Browser - Returns [{"id":1,"name":"RaviTeja","email":"raviteja@aws.com","department":null}] - Proof of RDS persistence after POST + CloudWatch logs: Every GET /users generates [DEBUG] Hibernate select * + [INFO] GET /users - Fetching all users which are pushed to GET /logs memory buffer + future AWS CloudWatch Logs group 89-cloudwatch-logs*
 
+### Demo 10 – Render Live - Deploy Succeeded - LIVE
+![Demo10 Render](screenshots/demo10.png)
+
+*Render Dashboard - 89-cloudwatch-logs - STATUS: Deploy succeeded | Live - DURATION: 2m12s - DEPLOYED: Oct 25, 2026 at 7:34:21 PM GMT+5:30 - TRIGGER: Auto-Deploy - SOURCE: 527b1ad - Logs: 14:06:38.354 [http-nio-10000-exec-4] INFO c.r.c.service.CloudWatchLogService - Home endpoint called - totalUsers=0 - DEBUG org.hibernate.SQL - select count(*) from users u1_0 - Hibernate: select count(*) from users u1_0 - Proof of Live Deployment on Internet - Docker Multi-Stage + CloudWatch Logs Simulation + Hibernate SQL Logging + Logback File Appender working on Render*
+
 ---
 
 # 🧪 API Testing Examples
